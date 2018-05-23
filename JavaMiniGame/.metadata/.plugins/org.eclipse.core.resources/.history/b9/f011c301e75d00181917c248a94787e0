@@ -1,0 +1,32 @@
+package com.miniGame;
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Gremlin extends GameObject {
+	
+	public Gremlin(int x, int y, ID id) { 
+		super(x,y,id);
+		
+		//velX =5; 
+		velY = 5; 
+	}
+
+	
+	public void tick() {
+		x += velX; 
+		y += velY; 
+		
+		if(y <= 0 || y >= Game.HEIGHT)
+			velY *= -1; 
+		
+	}
+
+
+	public void render(Graphics g) {
+		// TODO Auto-generated method stub
+		g.setColor(Color.GREEN); 
+		g.fillRect(x, y, 16, 16);
+		
+	}
+
+}

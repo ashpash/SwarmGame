@@ -1,0 +1,11 @@
+package com.miniGame;
+
+import java.awt.Canvas;
+
+public class Window  extends Canvas{
+
+
+	
+	
+
+}

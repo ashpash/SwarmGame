@@ -1,0 +1,24 @@
+package com.miniGame;
+import java.awt.Graphics;
+
+public class Gremlin extends GameObject {
+	
+	public Gremlin(int x, int y, ID id) { 
+		super(x,y,id);
+	}
+
+	
+	public void tick() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public void render(Graphics g) {
+		// TODO Auto-generated method stub
+		g.setColor(Color.GREEN); 
+		g.fillRect(x, y, 16, 16);
+		
+	}
+
+}

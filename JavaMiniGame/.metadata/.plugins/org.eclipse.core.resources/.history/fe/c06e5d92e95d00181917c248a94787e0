@@ -1,0 +1,10 @@
+package com.miniGame;
+
+
+
+// Heads up display 
+public class HUD {
+	
+	public static int HEALTH 
+
+}

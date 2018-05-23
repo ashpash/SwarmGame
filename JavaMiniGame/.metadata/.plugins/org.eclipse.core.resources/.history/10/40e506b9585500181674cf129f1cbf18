@@ -1,0 +1,14 @@
+package com.miniGame;
+
+public abstract class GameObject {
+	
+	protected int x, y; // can only be accessed by object that inherits variables
+	protected ID id;
+	protected int velX, velY; 
+	
+	public GameObject (int x, int y, ID id) { 
+		this.x = x; 
+		this.y = y; 
+		this.id = id; 
+	}
+}

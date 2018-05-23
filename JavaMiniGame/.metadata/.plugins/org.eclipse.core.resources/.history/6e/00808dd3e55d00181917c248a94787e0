@@ -1,0 +1,6 @@
+package com.miniGame;
+import java.awt.Graphics;
+
+public class Gremlin extends GameObject {
+
+}

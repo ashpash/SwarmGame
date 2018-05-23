@@ -1,0 +1,5 @@
+package com.miniGame;
+
+public abstract class GameObject {
+
+}

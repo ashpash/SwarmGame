@@ -1,0 +1,28 @@
+package com.miniGame;
+
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class HUDp1 {
+	
+	public static int HEALTH = 100; 
+	private int green = 255; 
+	
+	public void tick() { 
+		
+	
+		HEALTH = Game.clamp(HEALTH, 0, 100);
+		if (HEALTH < HEALTH/2) green = 100; 
+		
+	}
+	
+	public void render(Graphics g){
+		g.setColor(Color.GRAY);
+		g.fillRect(10, 15, 200, 32);
+		g.setColor(new Color(75, green, 0));
+		g.fillRect(10, 15, HEALTH * 2, 32);
+		g.setColor(Color.WHITE);
+		g.drawRect(10, 15, 200, 32);
+	}
+
+}

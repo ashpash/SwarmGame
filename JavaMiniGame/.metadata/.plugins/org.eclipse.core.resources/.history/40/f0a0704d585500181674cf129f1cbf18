@@ -1,0 +1,7 @@
+package com.miniGame;
+
+public abstract class GameObject {
+	
+	protected int x, y; // can only be accessed by object that inherits variables
+
+}

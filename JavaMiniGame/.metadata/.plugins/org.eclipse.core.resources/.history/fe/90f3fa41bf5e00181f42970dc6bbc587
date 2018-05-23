@@ -1,0 +1,19 @@
+package com.miniGame;
+
+public class Spawn {
+	
+	private Handler handler ; 
+	private HUDp1 hud; 
+	
+	private int scoreKeeper; 
+	
+	public Spawn(Handler handler, HUDp1 hud){
+		this.handler = handler; 
+		this.hud = hud; 
+	}
+	
+	public void tick() {
+		scoreKeeper ++;
+	}
+
+}
